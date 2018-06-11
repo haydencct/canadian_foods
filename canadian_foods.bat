@@ -43,7 +43,8 @@ echo 3) Statistics
 echo 4) Review 
 echo 5) Return to Menu 
 set /p $= Selection: 
-if %$% == 1 (
+if %$% === 1 (
+	echo.
 	echo Ginger ale is a beverage mainly composed of carbonated
 	echo water, sugar or high fructose corn syrup, and ginger
 	echo flavour, be it artifical or natural.
@@ -61,9 +62,31 @@ if %$% == 1 (
 	echo (specifically beer or champagne due to its
 	echo similar appearance and taste), as a subsitute
 	echo for these drinks in mixes, or just as a drink
-	echo drank individually
-) 
+	echo drank individually. It has also rised to
+	echo popularity as a home remedy for stomachaches
+	echo and motion sickness.
+	pause >nul
+	goto gingerAle
+)
 if %$% == 2 (
-	echo no
+	echo Though American apothecary and surgeon Thomas
+	echo Cantrell claims to have invented ginger ale,
+	echo the far more popular dry (non-alcoholic)
+	echo ginger ale is commonly seen as a Canadian
+	echo invention after he had developed a flavour
+	echo extract he would combine with water to make
+	echo Canada Dry ginger ale. The beverage was an
+	echo instant success. The drink would also gain
+	echo its reputation as a famous mixer in North
+	echo America during the Prohibition Era. By the
+	echo end of Prohibition, Canada Dry had become
+	echo the internationally renowned drink it is
+	echo today.
+	pause >nul
+	goto gingerAle
 ) 
+if %$% == 3 (
+	
+)
 pause >nul
+goto gingerAle
